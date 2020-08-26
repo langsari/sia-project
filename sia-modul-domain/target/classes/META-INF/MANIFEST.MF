@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.sia.modul.sia-modul-domain
+Built-By: Kholed
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1184591439058
+Import-Package: com.fasterxml.jackson.databind.annotation;version="2.2
+ ",com.fasterxml.jackson.datatype.joda.deser;version="2.2",com.sia.mod
+ ul.domain;version="1.0",javassist.util.proxy;version="3.18",javax.per
+ sistence;version="1.0",javax.validation.constraints,org.hibernate.ann
+ otations;version="4.2",org.hibernate.proxy;version="4.2",org.hibernat
+ e.validator.constraints;version="4.3.1.Final",org.joda.time;version="
+ 2.7",org.springframework.format.annotation;version="3.1"
+Tool: Bnd-0.0.357
+Originally-Created-By: 1.8.0_74 (Oracle Corporation)
+Export-Package: com.sia.modul.domain;uses:="javax.persistence,org.hibe
+ rnate.annotations,org.joda.time,org.springframework.format.annotation
+ ,com.fasterxml.jackson.datatype.joda.deser,javax.validation.constrain
+ ts,com.fasterxml.jackson.databind.annotation,org.hibernate.validator.
+ constraints";version="1.0.0"
+Bundle-Version: 1.0.0
+Bundle-Name: sia-modul-domain
+Build-Jdk: 1.8.0_74
+Created-By: 1.8.0_74 (Oracle Corporation)
+

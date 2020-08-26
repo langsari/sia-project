@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-30T20:04:42 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2bcc5ca1-a516-49d5-bf7b-48ded00a330a">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="namaCapPembMK" class="java.lang.String"/>
+	<field name="deskripsiCapPembMK" class="java.lang.String"/>
+	<title>
+		<band height="2">
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="-20" width="480" height="22" backcolor="#BABABA" uuid="77c0b411-05bb-439d-b5f9-ac453008423e"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CAPAIAN PEMBELAJARAN MATA KULIAH]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="-20" y="0" width="70" height="60" uuid="31926bba-5d35-4cec-9fa1-1582fffc3292"/>
+				<box padding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaCapPembMK}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="50" y="0" width="410" height="60" uuid="6da53c6e-d2f0-4d94-94ef-f354d3f63c89"/>
+				<box padding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deskripsiCapPembMK}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

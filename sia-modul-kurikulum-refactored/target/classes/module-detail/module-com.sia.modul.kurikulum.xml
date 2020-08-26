@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Modul Kurikulum</name>
+	<version>1.0</version>
+	<url-mapping>/kurikulum/*</url-mapping>
+	<config-locations>/module-resource/kurikulum/servlet-context.xml</config-locations>
+	<menues>
+		<menu>
+			<name>Kelola Bentuk Penilaian</name>
+			<url>/rencanapembelajaran/bentuk/</url>
+		</menu>
+		<menu>
+			<name>Kelola Capaian Belajar Mata Kuliah</name>
+			<url>/matakuliah/capaianbelajar/</url>
+		</menu>
+		<menu>
+			<name>Kelola Capaian Belajar Satuan Manajemen</name>
+			<url>/capaianbelajar/satuanmanajemen/</url>
+		</menu>
+		<menu>
+			<name>Kelola Kurikulum</name>
+			<url>/kurikulum/</url>
+		</menu>
+		<menu>
+			<name>Kelola Mata Kuliah</name>
+			<url>/matakuliah/kelola/</url>
+		</menu>
+		<menu>
+			<name>Kelola Mata Kuliah Prasyarat</name>
+			<url>/matakuliah/prasyarat/</url>
+		</menu>
+		<menu>
+			<name>Kelola Mata Kuliah untuk Satuan Manajemen</name>
+			<url>/matakuliah/satuanmanajemen/</url>
+		</menu>
+		<menu>
+			<name>Kelola Metode Pembelajaran</name>
+			<url>/rencanapembelajaran/metode/</url>
+		</menu>
+		<menu>
+			<name>Kelola Pustaka Mata Kuliah</name>
+			<url>/silabus/pustaka/</url>
+		</menu>
+		<menu>
+			<name>Kelola Rencana Pembelajaran</name>
+			<url>/rencanapembelajaran/kelola/</url>
+		</menu>
+		<menu>
+			<name>Kelola Rumpun Mata Kuliah</name>
+			<url>/matakuliah/rumpun/</url>
+		</menu>
+		<menu>
+			<name>Kelola Silabus</name>
+			<url>/silabus/kelola/</url>
+		</menu>
+		<menu>
+			<name>Laporan Rencana Pembelajaran</name>
+			<url>/rencanapembelajaran/kelola/laporan/</url>
+		</menu>
+		<menu>
+			<name>Laporan Silabus</name>
+			<url>/silabus/kelola/laporan/</url>
+		</menu>
+	</menues>
+</module>

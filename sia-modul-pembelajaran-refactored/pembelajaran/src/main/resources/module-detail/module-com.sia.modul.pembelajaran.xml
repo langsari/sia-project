@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Modul Pembelajaran</name>
+	<version>1.0</version>
+	<url-mapping>/pembelajaran/*</url-mapping>
+	<config-locations>/module-resource/pembelajaran/servlet-context.xml</config-locations>
+	<menues>
+		<menu>
+			<name>Absensi</name>
+			<url>/absensi/</url>
+		</menu>
+		<menu>
+			<name>Berita Acara</name>
+			<url>/beritaacara/</url>
+		</menu>
+		<menu>
+			<name>Kartu Rencana Studi</name>
+			<url>/karturencanastudi/susun/</url>
+		</menu>
+		<menu>
+			<name>Kelola Aturan Pengganti</name>
+			<url>/aturanpengganti/</url>
+		</menu>
+		<menu>
+			<name>Kelola Batas Pengambilan KRS</name>
+			<url>/batasambilsks/</url>
+		</menu>
+		<menu>
+			<name>Kelola Pembelajaran</name>
+			<url>/pembelajaran/</url>
+		</menu>
+		<menu>
+			<name>Kelola Pendamping Akademik</name>
+			<url>/perwalian/</url>
+		</menu>
+		<menu>
+			<name>Kelola Periode</name>
+			<url>/tglsemester/</url>
+		</menu>
+		<menu>
+			<name>Kelola Rombongan Belajar</name>
+			<url>/rombel/</url>
+		</menu>
+		<menu>
+			<name>Kelola Semester</name>
+			<url>/semester/</url>
+		</menu>
+		<menu>
+			<name>Kelola Status Absensi</name>
+			<url>/stskehadiran/</url>
+		</menu>
+		<menu>
+			<name>Kelola Tahun Ajaran</name>
+			<url>/tahunajaran/</url>
+		</menu>
+		<menu>
+			<name>Laporan Pembayaran</name>
+			<url>/pembayaran/</url>
+		</menu>
+		<menu>
+			<name>Laporan Pertemuan</name>
+			<url>/absensi/laporanpertemuan/</url>
+		</menu>
+		<menu>
+			<name>Monitoring Pengambilan KRS</name>
+			<url>/pengambilankrs/</url>
+		</menu>
+		<menu>
+			<name>Persetujuan Kartu Rencana Studi</name>
+			<url>/karturencanastudi/penyetujuan/</url>
+		</menu>
+		
+	</menues>
+</module>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-07T23:15:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ekuivalensi" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c44f89ba-1d2e-4a6a-a561-d9dbf24b88e3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<parameter name="pd" class="com.sia.main.domain.Pd"/>
+	<parameter name="ptk" class="com.sia.main.domain.Ptk"/>
+	<parameter name="kurikulum" class="com.sia.main.domain.Kurikulum"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="kodeMKBaru" class="java.lang.String"/>
+	<field name="namaMKBaru" class="java.lang.String"/>
+	<field name="sksMKBaru" class="java.lang.String"/>
+	<field name="sifatMKBaru" class="java.lang.String"/>
+	<field name="statusMKBaru" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="144" splitType="Stretch">
+			<staticText>
+				<reportElement key="" x="186" y="22" width="183" height="39" uuid="586f5c73-ab49-4116-bb56-caa31c1ff234">
+					<property name="com.jaspersoft.studio.unit.y" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ekuivalensi Kurikulum]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="30" y="80" width="50" height="30" uuid="fa176308-2566-47f6-a476-64d178412f52"/>
+				<textFieldExpression><![CDATA["Nama"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="80" width="150" height="30" uuid="487ad6e8-ce20-4dbf-a1a7-03e0e38dbb0d"/>
+				<textFieldExpression><![CDATA[$P{pd}.getNmPd()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="80" width="89" height="30" uuid="600f6c76-b7fd-467b-be41-6eab7b254176"/>
+				<textFieldExpression><![CDATA["Kurikulum"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="80" width="160" height="30" uuid="c82ec8bf-c92e-4ca7-a6e7-115bf6903475"/>
+				<textFieldExpression><![CDATA[$P{kurikulum}.getNamaKurikulum()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="110" width="160" height="30" uuid="3ea0d4d6-12b5-47db-809a-ef9171622efa"/>
+				<textFieldExpression><![CDATA[$P{ptk}.getNmPtk()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="110" width="89" height="30" uuid="a4d2311c-93ac-4cd8-94ea-48c80e12fa99"/>
+				<textFieldExpression><![CDATA["Pendidik"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="110" width="150" height="30" uuid="70f2159b-42a8-482b-b185-d1eafc000d44"/>
+				<textFieldExpression><![CDATA[$P{pd}.getNimPd()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="110" width="50" height="30" uuid="53f85590-f4ee-4795-a1ae-4c92984824b2"/>
+				<textFieldExpression><![CDATA["NIM"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="18" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="1" width="80" height="30" uuid="9251e05a-1273-47e9-999a-b96a42c7e062"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Kode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="1" width="240" height="30" uuid="e64d9329-b802-46f6-8e7f-76fd2b9ded61"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Matakuliah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="1" width="40" height="30" uuid="55eaaf85-21f7-4100-85af-61f1580a4d94"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[SKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="1" width="60" height="30" uuid="e7bc82e0-4fef-4418-8e2e-b9d5f26c22f7"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sifat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="1" width="80" height="30" uuid="de70d56d-432e-41e6-982d-2af440d41f24"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="80" height="31" uuid="387fc299-b1e4-494b-9784-e46fec919d25"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kodeMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="240" height="31" uuid="7d30af42-f929-46a8-8ae5-c479a35dad6e"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{namaMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="40" height="31" uuid="ec23cef2-333b-4922-adfb-f439a644774d"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sksMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="60" height="31" uuid="ac4d2c15-8948-4cde-9788-c328f129d344"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sifatMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="80" height="31" uuid="69ebdaba-9604-4c84-93e4-63b586b3f088"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{statusMKBaru}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

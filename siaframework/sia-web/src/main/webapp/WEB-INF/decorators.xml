@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/views/master">
+
+    <decorator name="admin-master-page" page="AdminMaster.jsp">
+        <pattern>/admin/*</pattern>
+    </decorator>
+    
+    <decorator name="module-master-page" page="ModuleMaster.jsp">
+        <pattern>/modul/*</pattern>
+    </decorator>
+    
+    <excludes>
+    	<pattern>/account/*</pattern>
+    	<pattern>/session/*</pattern>
+    	<pattern>/error/*</pattern>
+    </excludes>
+    
+</decorators>

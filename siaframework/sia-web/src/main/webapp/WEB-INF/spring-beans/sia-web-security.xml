@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<security:http use-expressions="true" >
+		<security:form-login 
+		    login-page="/account/login" 
+			authentication-failure-url="/account/login?error" 
+			username-parameter="username"
+			password-parameter="password"
+			authentication-success-handler-ref="loginSuccessHandler"/>
+		<security:logout logout-success-url="/account/logout" delete-cookies="JSESSIONID"/>
+		<security:access-denied-handler ref="accessDeniedHandler"/>
+	</security:http>
+
+	<security:authentication-manager>
+	  	<security:authentication-provider user-service-ref="userDetailProvider">
+		  	<security:password-encoder hash="md5"></security:password-encoder>
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+	<bean id="userDetailProvider" class="com.sia.main.web.security.SIAUserProvider">
+		<property name="penggunaService" ref="penggunaServiceRef"></property>
+	</bean>
+	
+	<bean id="loginSuccessHandler" class="com.sia.main.web.security.SessionSavedRequestAwareAuthenticationSuccessHandler">
+		<property name="useReferer" value="false"></property>
+		<property name="defaultTargetUrl" value="/account/login/"></property>
+	</bean>
+	
+	<bean id="accessDeniedHandler" class="com.sia.main.web.security.RedirectAccessDeniedHandler">
+		<property name="redirectUrl" value="/error/403"></property>
+	</bean>
+
+</beans>

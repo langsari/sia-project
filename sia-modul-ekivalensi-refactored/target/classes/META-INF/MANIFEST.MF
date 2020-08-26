@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Originally-Created-By: 1.8.0_74 (Oracle Corporation)
+Bundle-SymbolicName: com.sia.modul.ekuivalensi
+Bundle-Name: ekuivalensi
+Bundle-Version: 1.0.0
+Built-By: Kholed
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1496526486029
+Fragment-Host: com.sia.main.sia-web;bundle-version="0.0.1.SNAPSHOT"
+Build-Jdk: 1.8.0_74
+Created-By: 1.8.0_74 (Oracle Corporation)
+Tool: Bnd-0.0.357
+

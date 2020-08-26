@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Modul Ekuivalensi</name>
+	<version>1.0</version>
+	<url-mapping>/ekuivalensi/*</url-mapping>
+	<config-locations>/module-resource/ekuivalensi/servlet-context.xml</config-locations>
+	<menues>
+		<menu>
+			<name>Kelola Peserta Didik Alihjenjang</name>
+			<url>/pdalihjenjang/</url>
+		</menu>
+		<menu>
+			<name>Cetak Laporan Ekuivalensi Alihjenjang</name>
+			<url>/calonpd/laporan</url>
+		</menu>
+		<menu>
+			<name>Kelola Aturan Ekuivalensi</name>
+			<url>/ekuivalensi/</url>
+		</menu>
+		<menu>
+			<name>Cetak Laporan Ekuivalensi</name>
+			<url>/ekuivalensi/laporan</url>
+		</menu>
+		<menu>
+			<name>Verifikasi Ekuivalensi</name>
+			<url>/ekuivalensi/pesertadidik/</url>
+		</menu>
+		<menu>
+			<name>Kelola Katalog Alihjenjang</name>
+			<url>/katalogalihjenjang/</url>
+		</menu>
+		<menu>
+			<name>Begikan Katalog ke Satuan Manajemen</name>
+			<url>/katalogsatman/</url>
+		</menu>
+		<menu>
+			<name>Kelola Matakuliah Alihjenjang</name>
+			<url>/mkalihjenjang/</url>
+		</menu>
+		<menu>
+			<name>Kelola Aturan Ekuivalensi Alihjenjang</name>
+			<url>/katalogsatman/</url>
+		</menu>
+		<menu>
+			<name>Kelola Ekuivalensi Peserta Didik Alihjenjang</name>
+			<url>/calonpd/</url>
+		</menu>
+		<menu>
+			<name>Verifikasi Matakuliah Wajib</name>
+			<url>/calonpd/</url>
+		</menu>
+	</menues>
+</module>

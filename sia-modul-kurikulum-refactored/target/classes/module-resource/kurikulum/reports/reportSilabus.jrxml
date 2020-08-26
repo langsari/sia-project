@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-30T22:51:27 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="74b6e4bf-9838-42a1-9668-679f7092224c">
+	<parameter name="mk" class="com.sia.main.domain.MK"/>
+	<parameter name="kur" class="com.sia.main.domain.Kurikulum"/>
+	<parameter name="rumpunMK" class="com.sia.main.domain.RumpunMK"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="capPembMKReport" class="java.util.List"/>
+	<field name="capPembReport" class="java.util.List"/>
+	<field name="pokokBahasanReport" class="java.util.List"/>
+	<field name="prasyaratMKReport" class="java.util.List"/>
+	<field name="pustakaUtamaReport" class="java.util.List"/>
+	<field name="pustakaPendukungReport" class="java.util.List"/>
+	<field name="satManMKReport" class="java.util.List"/>
+	<title>
+		<band height="307" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="107" y="50" width="129" height="20" uuid="9bf392b8-ee5c-4bfa-a36f-796491ed9b53"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mk}.getKodeMK()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="236" y="50" width="274" height="20" uuid="ddcde325-7594-409f-982f-469eaf77e0e7"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mk}.getNamaMK()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="27" y="141" width="483" height="126" uuid="017540d1-310e-48c3-b491-86fb197c8053"/>
+				<box padding="5" leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$P{mk}.getDeskripsiMK()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="236" y="70" width="274" height="20" uuid="41e37fbc-0ff1-48ea-ae02-e9cb2b2b79b3"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mk}.getJumlahSKS()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="107" y="70" width="129" height="20" uuid="d2c498d4-e996-4cf8-95a3-325a340ae1be"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Kredit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="27" y="121" width="483" height="20" backcolor="#BABABA" uuid="33d8a901-a3be-4d7b-a7b4-3b53a9e23701"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESKRIPSI MATA KULIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="27" y="267" width="483" height="20" backcolor="#BABABA" uuid="53f40530-5e8c-466b-960c-89b45e321ff7"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CAPAIAN PEMBELAJARAN SATUAN MANAJEMEN YANG DIDUKUNG]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="27" y="287" width="483" height="20" uuid="310e7b84-15df-4720-b64a-9254dcd0a99d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="27" y="20" width="359" height="30" uuid="877f94b4-838d-426c-9482-1e04d667a01c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SILABUS KURIKULUM : " + $P{kur}.getNamaKurikulum()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="107" y="90" width="129" height="20" uuid="8f0eda73-71f6-41d4-9c5f-44661fda0b19"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Rumpun Mata Kuliah]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="236" y="90" width="274" height="20" uuid="a2adee78-5793-4119-9722-309a7965e12c"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rumpunMK}.getNamaRumpunMK()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="27" y="50" width="80" height="60" backcolor="#BABABA" uuid="67b36d4d-dc8b-4c0c-8c34-515b14a8754e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MATA KULIAH]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="90" splitType="Stretch">
+			<subreport>
+				<reportElement mode="Transparent" x="27" y="0" width="484" height="90" uuid="69585a99-9938-4059-b1d4-b4d81ea7db3f"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{capPembReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["dataCapPemb.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="90">
+			<subreport>
+				<reportElement mode="Transparent" x="27" y="0" width="484" height="90" uuid="3b57814b-7868-4b5a-9d05-d8d06f26f769"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{capPembMKReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["dataCapPembMK.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="100">
+			<subreport>
+				<reportElement x="27" y="0" width="484" height="100" uuid="ddda57f5-0410-4e58-9fe8-cc2a6ec0ad18"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pokokBahasanReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["dataPokokBahasan.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="79">
+			<subreport>
+				<reportElement x="27" y="0" width="484" height="79" uuid="a799900b-7850-4864-bd06-c4198aa1bd0a"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{prasyaratMKReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["dataPrasyaratMK.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="90">
+			<subreport>
+				<reportElement x="27" y="0" width="484" height="90" uuid="0121299b-9c9a-4a43-aaa4-b2e4acf87d2c"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{satManMKReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["satManMKReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="68">
+			<subreport>
+				<reportElement x="27" y="0" width="483" height="68" uuid="b7b96e3e-7f66-4021-b4d7-4753de5e4011"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pustakaUtamaReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["pustakaUtama.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="80">
+			<subreport>
+				<reportElement x="27" y="0" width="483" height="80" uuid="b65a0746-4f4d-4127-95a2-9f2efe8f888e"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pustakaPendukungReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["pustakaPendukung.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="21">
+			<textField>
+				<reportElement x="270" y="0" width="150" height="21" uuid="91950a91-1f39-47e3-a1d6-1abaf8eb36f4"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="420" y="0" width="90" height="21" uuid="ed5548b6-d351-4c4d-aef7-ecfecf036d2c"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

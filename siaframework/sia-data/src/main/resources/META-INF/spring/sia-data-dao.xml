@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"                               
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:osgi="http://www.eclipse.org/gemini/blueprint/schema/blueprint"  
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd                     
+       	http://www.eclipse.org/gemini/blueprint/schema/blueprint http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd">
+    
+    <bean id="basicDAO" class="com.sia.main.data.dao.BasicDAO" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="menuDAO" class="com.sia.main.data.dao.impl.MenuDAOImpl" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="menuPeranDAO" class="com.sia.main.data.dao.impl.MenuPeranDAOImpl">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="modulDAO" class="com.sia.main.data.dao.impl.ModulDAOImpl" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="pdDAO" class="com.sia.main.data.dao.impl.PdDAOImpl">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="penggunaDAO" class="com.sia.main.data.dao.impl.PenggunaDAOImpl" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="peranDAO" class="com.sia.main.data.dao.impl.PeranDAOImpl" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="peranPenggunaDAO" class="com.sia.main.data.dao.impl.PeranPenggunaDAOImpl" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="ptkDAO" class="com.sia.main.data.dao.impl.PtkDAOImpl">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+    <bean id="satuanManajemenDAO" class="com.sia.main.data.dao.impl.SatuanManajemenDAOImpl" >
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="tipePenggunaDAO" class="com.sia.main.data.dao.impl.TipePenggunaDAOImpl">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+	
+</beans>

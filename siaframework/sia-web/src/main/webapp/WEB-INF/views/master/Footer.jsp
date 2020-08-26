@@ -1,0 +1,1 @@
+<p class="no-s">2015 &copy; LBE RPL Teknik Informatika ITS.</p>

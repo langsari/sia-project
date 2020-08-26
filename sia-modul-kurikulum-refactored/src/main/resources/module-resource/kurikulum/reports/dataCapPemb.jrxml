@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-30T21:29:24 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dataCapPemb" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="855a96b2-7b02-4beb-af69-882b5130dd0c">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="namaCapPemb" class="java.lang.String"/>
+	<field name="deskripsiCapPemb" class="java.lang.String"/>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="-20" y="-20" width="70" height="69" uuid="e53ad572-2b4d-42e7-9f53-b4a1146cf87c"/>
+				<box padding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaCapPemb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" mode="Opaque" x="50" y="-20" width="410" height="69" uuid="75882233-e5de-4af8-ad8e-8a5ad8f3468c"/>
+				<box padding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deskripsiCapPemb}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20">
+			<rectangle>
+				<reportElement x="-20" y="0" width="480" height="20" uuid="3d1d7783-0bc0-48f8-8a1a-72657dcd6a66"/>
+			</rectangle>
+		</band>
+	</pageFooter>
+</jasperReport>

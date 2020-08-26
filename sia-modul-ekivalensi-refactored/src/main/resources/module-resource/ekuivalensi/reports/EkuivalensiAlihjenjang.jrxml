@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-06-21T14:47:41 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EkuivalensiAlihjenjang" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3386b786-8192-40b9-96d6-d5c893d3d1c5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<parameter name="calonPD" class="com.sia.main.domain.CalonPD"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="kodeMKBaru" class="java.lang.String"/>
+	<field name="namaMKBaru" class="java.lang.String"/>
+	<field name="sksMKBaru" class="java.lang.String"/>
+	<field name="sifatMKBaru" class="java.lang.String"/>
+	<field name="statusMKBaru" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="60" width="110" height="30" uuid="0fca82ce-aded-48d2-aede-86d34486dbce"/>
+				<textFieldExpression><![CDATA["Nama"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="188" y="10" width="185" height="30" uuid="af6ad8a7-b678-4371-bd40-6a0ad758f19c"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ekuivalensi Alihjenjang]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="30" y="90" width="110" height="30" uuid="c00982c3-e45f-4680-9a1d-896cc5fca41f"/>
+				<textFieldExpression><![CDATA["Tempat, Tanggal Lahir"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="60" width="140" height="30" uuid="a2a100ad-2c82-4864-a7d0-1f69396d615c"/>
+				<textFieldExpression><![CDATA[$P{calonPD}.getNmCalonPD()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="90" width="140" height="30" uuid="00385407-2d5d-4689-be96-e7fc0865f5ea"/>
+				<textFieldExpression><![CDATA[$P{calonPD}.getTempatLahir()+", "+$P{calonPD}.getTglLahir()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="60" width="80" height="30" uuid="82d3b4c5-1518-47a5-b0c5-dd19761bbcf5"/>
+				<textFieldExpression><![CDATA["PT. Asal"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="90" width="80" height="30" uuid="e05b642a-f2b2-46e4-aab8-563bdf0e4c86"/>
+				<textFieldExpression><![CDATA["Prodi"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="60" width="159" height="30" uuid="578b1712-763a-48b6-a629-2ffd411a4312"/>
+				<textFieldExpression><![CDATA[$P{calonPD}.getPtAsal()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="90" width="159" height="30" uuid="80c44928-68e2-4d26-8ee1-6c338ed68cdf"/>
+				<textFieldExpression><![CDATA[$P{calonPD}.getSatMan().getNmSatMan()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="0" width="80" height="30" uuid="079905de-69ca-4b1d-8dbc-a96630153fc1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Kode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="240" height="30" uuid="26b40c7d-f2b3-4b0d-a1a2-cfefe081c4f8"/>
+				<text><![CDATA[Matakuliah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="0" width="40" height="30" uuid="4efab1ee-7af6-4be9-856e-ee24303bb4cc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[SKS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="89" height="30" uuid="2807c33e-9d3f-471a-9db7-637d5e3b6055"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="60" height="30" uuid="07609d87-377f-491f-b3f9-bc3591e847bd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Sifat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<textField>
+				<reportElement x="30" y="0" width="81" height="32" uuid="f794d8ec-38be-4612-9314-5a1bf3f4890d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kodeMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="239" height="32" uuid="39848822-6282-44df-9cf4-12f6c0269069"/>
+				<textFieldExpression><![CDATA[$F{namaMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="41" height="32" uuid="676736a5-305d-4548-acfa-644ebd92d7d9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sksMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="61" height="32" uuid="898cbc39-4305-465c-ad25-f2be5689f78b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{sifatMKBaru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="89" height="32" uuid="0d4c1cff-dde6-454a-8411-b131f1fce30d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{statusMKBaru}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

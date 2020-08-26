@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Modul Penilaian</name>
+	<version>1.0</version>
+	<url-mapping>/penilaian/*</url-mapping>
+	<config-locations>/module-resource/penilaian/servlet-context.xml</config-locations>
+	<menues>
+		<menu>
+			<name>Isi Kuisioner</name>
+			<url>/isi_kuisioner/</url>
+		</menu>
+		<menu>
+			<name>Kelola Kuisioner</name>
+			<url>/kelola_kuisioner/</url>
+		</menu>
+		<menu>
+			<name>Kelola Nilai</name>
+			<url>/kelola_nilai/</url>
+		</menu>
+		<menu>
+			<name>Konversi Nilai</name>
+			<url>/konversi_nilai/</url>
+		</menu>
+		<menu>
+			<name>Laporan Kuisioner Per Kelas</name>
+			<url>/laporan_kuisioner_kelas/</url>
+		</menu>
+		<menu>
+			<name>Laporan Kuisioner Periodik</name>
+			<url>/laporan_kuisioner_periode/</url>
+		</menu>
+		<menu>
+			<name>Peringkat IPK</name>
+			<url>/lihat_ipk/</url>
+		</menu>
+		<menu>
+			<name>Peringkat IPS</name>
+			<url>/lihat_ips/</url>
+		</menu>
+		<menu>
+			<name>Lihat Nilai Per Kelas</name>
+			<url>/lihat_nilai/</url>
+		</menu>
+		<menu>
+			<name>Nilai Per Periode</name>
+			<url>/lihat_nilai_periode/</url>
+		</menu>
+		<menu>
+			<name>Transkrip Nilai</name>
+			<url>/lihat_transkrip/</url>
+		</menu>
+		<menu>
+			<name>Perbaharui IP</name>
+			<url>/update_ip/</url>
+		</menu>
+	</menues>
+</module>

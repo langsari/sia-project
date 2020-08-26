@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"                               
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:osgi="http://www.eclipse.org/gemini/blueprint/schema/blueprint"  
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd                     
+       	http://www.eclipse.org/gemini/blueprint/schema/blueprint http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd">
+
+	<bean id="installedModulePath" class="java.lang.String">
+		<constructor-arg value="/usr/local/sia/installed"></constructor-arg>
+	</bean>
+
+	<bean id="temporaryModulePath" class="java.lang.String">
+		<constructor-arg value="/usr/local/sia/temp"></constructor-arg>
+	</bean>
+
+    <bean id="menuPeranServiceBean" class="com.sia.main.service.services.impl.MenuPeranServiceImpl" >
+    	<property name="menuPeranDAO" ref="menuPeranDAORef"></property>
+    </bean>
+    
+    <bean id="menuServiceBean" class="com.sia.main.service.services.impl.MenuServiceImpl" >
+    	<property name="menuDAO" ref="menuDAORef"></property>
+    	<property name="menuPeranService" ref="menuPeranServiceBean"></property>
+    </bean>
+    
+    <bean id="modulServiceBean" class="com.sia.main.service.services.impl.ModulServiceImpl" >
+    	<property name="installedModuleLocation" ref="installedModulePath"></property>
+    	<property name="temporaryModuleLocation" ref="temporaryModulePath"></property>
+    	<property name="modulDAO" ref="modulDAORef"></property>
+    	<property name="menuService" ref="menuServiceBean"></property>
+    	<property name="moduleReader" ref="osgiModuleReader"></property>
+    </bean>
+    
+    <bean id="penggunaServiceBean" class="com.sia.main.service.services.impl.PenggunaServiceImpl" >
+    	<property name="penggunaDAO" ref="penggunaDAORef"></property>
+    </bean>
+    
+    <bean id="peranPenggunaServiceBean" class="com.sia.main.service.services.impl.PeranPenggunaServiceImpl" >
+    	<property name="peranPenggunaDAO" ref="peranPenggunaDAORef"></property>
+    </bean>
+    
+    <bean id="peranServiceBean" class="com.sia.main.service.services.impl.PeranServiceImpl" >
+    	<property name="peranDAO" ref="peranDAORef"></property>
+    </bean>
+    
+    <bean id="satuanManajemenServiceBean" class="com.sia.main.service.services.impl.SatuanManajemenServiceImpl" >
+    	<property name="satuanManajemenDAO" ref="satuanManajemenDAORef"></property>
+    </bean>
+    
+    <bean id="osgiModuleReader" class="com.sia.main.service.module.XmlModuleReaderBean">
+    	<property name="moduleDetailXmlPath" value="/module-detail/"></property>
+    	<property name="prefix" value="module-"></property>
+    </bean>
+    
+</beans>

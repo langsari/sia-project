@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-07-02T12:50:59 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rencanaPembelajaran" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d661f3eb-f670-4c40-8a7b-8101ca4123fd">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="mk" class="com.sia.main.domain.MK"/>
+	<parameter name="rumpunMK" class="com.sia.main.domain.RumpunMK"/>
+	<parameter name="kur" class="com.sia.main.domain.Kurikulum"/>
+	<parameter name="rp" class="com.sia.main.domain.RP"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="pokokBahasanReport" class="java.util.List"/>
+	<field name="rpDetailReport" class="java.util.List"/>
+	<title>
+		<band height="180" splitType="Stretch">
+			<rectangle>
+				<reportElement x="40" y="0" width="80" height="68" backcolor="#B6FAEA" uuid="c90d3995-c078-473e-b320-e2abd052f0db"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="40" y="68" width="270" height="19" backcolor="#BABABA" uuid="83ec66d3-0548-4cd5-929e-d096f4d9b2bd"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MATA KULIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="310" y="68" width="119" height="19" backcolor="#BABABA" uuid="cb6bb1c1-985b-4556-856f-4e0cf741255c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="429" y="68" width="229" height="19" backcolor="#BABABA" uuid="5bab7235-2473-4454-8364-7b8c3adc5f7b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUMPUN MK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="627" y="68" width="123" height="19" backcolor="#BABABA" uuid="f6a24e10-840a-4455-9b5b-af09d8abe8c1"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KREDIT (SKS)]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="40" y="88" width="270" height="19" uuid="f1653ca9-9064-4dd2-83d3-af36c5b89357"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mk}.getNamaMK()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="310" y="88" width="119" height="19" uuid="8aff9798-f205-4d5b-a3ef-3c5a2a07a838"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="11" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mk}.getKodeMK()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="429" y="88" width="229" height="19" uuid="47a4dd68-c6fb-4943-a44e-b6930086027d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rumpunMK}.getNamaRumpunMK()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="627" y="88" width="123" height="19" uuid="9e8eb97a-8b06-4dec-bf11-7fb519f310f2"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mk}.getJumlahSKS()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="40" y="107" width="110" height="43" uuid="d04ccae2-fce9-49b8-9694-678c64874c09"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bahan Kajian         :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="120" y="0" width="630" height="42" backcolor="#B6FAEA" uuid="b70e312f-a46f-4dee-b0a4-d25130212bd0"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RENCANA PEMBELAJARAN SEMESTER]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="120" y="42" width="630" height="26" backcolor="#B6FAEA" uuid="77dda5a4-20bb-443e-97ec-07cb1099bb8a"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["KURIKULUM " + $P{kur}.getNamaKurikulum()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="150" y="107" width="600" height="43" uuid="64a2f221-98d3-4389-9710-60b828d6795d"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rp}.getBahanKajian()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="40" y="150" width="710" height="30" uuid="fcaa0087-4510-40ea-83dc-21d6273b7734"/>
+				<box leftPadding="5">
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Topik Bahasan      :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="100" splitType="Stretch">
+			<subreport>
+				<reportElement x="40" y="0" width="680" height="100" uuid="21a39696-7269-4f88-bc55-cb55bb8ff1ac"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{pokokBahasanReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["RPPokokBahasan.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="450">
+			<subreport>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="40" y="0" width="680" height="450" uuid="4891c9e1-3c6e-4bc1-92b0-8a49467c7799"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{rpDetailReport})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["RPDetailReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30">
+			<textField>
+				<reportElement x="610" y="0" width="100" height="30" uuid="b6fc1d0c-c4cd-4227-bf45-3dde4633f6ae"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="710" y="0" width="100" height="30" uuid="518544f8-2b4a-400d-b939-c03678a11c60"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

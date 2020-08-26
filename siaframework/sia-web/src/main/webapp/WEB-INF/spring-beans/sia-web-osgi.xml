@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"	
+	xmlns:osgi="http://www.eclipse.org/gemini/blueprint/schema/blueprint"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.eclipse.org/gemini/blueprint/schema/blueprint http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd">
+	
+	<!-- Ref from sia-data -->
+	<osgi:reference id="basicDAORef" interface="com.sia.main.data.dao.BasicDAO" availability="mandatory">
+    </osgi:reference>
+	
+	<osgi:reference id="pdDAORef" interface="com.sia.main.data.dao.PdDAO" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="ptkDAORef" interface="com.sia.main.data.dao.PtkDAO" availability="mandatory">
+    </osgi:reference>
+	
+	<osgi:reference id="satManDAORef" interface="com.sia.main.data.dao.SatuanManajemenDAO" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="tipePenggunaDAORef" interface="com.sia.main.data.dao.TipePenggunaDAO" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="peranDAORef" interface="com.sia.main.data.dao.PeranDAO" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="penggunaDAO" interface="com.sia.main.data.dao.PenggunaDAO" availability="mandatory">
+    </osgi:reference>
+	
+	
+	<!-- Ref from sia-service -->
+    <osgi:reference id="penggunaServiceRef" interface="com.sia.main.service.services.PenggunaService" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="peranServiceRef" interface="com.sia.main.service.services.PeranService" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="peranPenggunaServiceRef" interface="com.sia.main.service.services.PeranPenggunaService" availability="mandatory">
+    </osgi:reference>
+    	
+    <osgi:reference id="modulServiceRef" interface="com.sia.main.service.services.ModulService" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="menuPeranServiceRef" interface="com.sia.main.service.services.MenuPeranService" availability="mandatory">
+    </osgi:reference>
+    
+    <osgi:reference id="menuServiceRef" interface="com.sia.main.service.services.MenuService" availability="mandatory">
+    </osgi:reference>
+	
+</beans>

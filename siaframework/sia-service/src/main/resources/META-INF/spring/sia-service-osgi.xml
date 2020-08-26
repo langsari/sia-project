@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"                               
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:osgi="http://www.eclipse.org/gemini/blueprint/schema/blueprint"                
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd                     
+       	http://www.eclipse.org/gemini/blueprint/schema/blueprint http://www.eclipse.org/gemini/blueprint/schema/blueprint/gemini-blueprint.xsd">
+
+	<osgi:service id="menuPeranServiceServ" interface="com.sia.main.service.services.MenuPeranService" ref="menuPeranServiceBean"/>
+    
+    <osgi:service id="menuServiceServ" interface="com.sia.main.service.services.MenuService" ref="menuServiceBean"/>
+    
+    <osgi:service id="modulServiceServ" interface="com.sia.main.service.services.ModulService" ref="modulServiceBean"/>
+    
+    <osgi:service id="penggunaServiceServ" interface="com.sia.main.service.services.PenggunaService" ref="penggunaServiceBean"/>
+    
+    <osgi:service id="peranPenggunaServiceServ" interface="com.sia.main.service.services.PeranPenggunaService" ref="peranPenggunaServiceBean"/>
+    
+    <osgi:service id="peranServiceServ" interface="com.sia.main.service.services.PeranService" ref="peranServiceBean"/>
+    
+    <osgi:service id="satuanManajemenServiceServ" interface="com.sia.main.service.services.SatuanManajemenService" ref="satuanManajemenServiceBean"/>
+
+
+	<osgi:reference id="menuPeranDAORef" interface="com.sia.main.data.dao.MenuPeranDAO" availability="mandatory"/>
+    
+    <osgi:reference id="menuDAORef" interface="com.sia.main.data.dao.MenuDAO" availability="mandatory"/>
+    
+    <osgi:reference id="modulDAORef" interface="com.sia.main.data.dao.ModulDAO" availability="mandatory"/>
+    
+    <osgi:reference id="penggunaDAORef" interface="com.sia.main.data.dao.PenggunaDAO" availability="mandatory"/>
+    
+    <osgi:reference id="peranPenggunaDAORef" interface="com.sia.main.data.dao.PeranPenggunaDAO" availability="mandatory"/>
+    
+    <osgi:reference id="peranDAORef" interface="com.sia.main.data.dao.PeranDAO" availability="mandatory"/>
+    
+    <osgi:reference id="satuanManajemenDAORef" interface="com.sia.main.data.dao.SatuanManajemenDAO" availability="mandatory"/>
+	
+</beans>
